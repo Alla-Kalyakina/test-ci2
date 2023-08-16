@@ -5,18 +5,18 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alla-Kalyakina/unit-test.git"
+    "url": "git+https://github.com/Alla-Kalyakina/test-ci1.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alla-Kalyakina/unit-test/issues"
+    "url": "https://github.com/Alla-Kalyakina/test-ci1/issues"
   },
-  "homepage": "https://github.com/Alla-Kalyakina/unit-test#readme",
+  "homepage": "https://github.com/Alla-Kalyakina/test-ci1#readme",
   "devDependencies": {
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
