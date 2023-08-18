@@ -1,10 +1,16 @@
-import checkHealth from '../app';
+import sortPlayers from '../app';
 
-test.each([
-  ['маг', 100, 'healthy'],
-  ['мечник', 30, 'wounded'],
-  ['лучник', 10, 'critical'],
-])('testing %s with health %i', (name, healthValue, expended) => {
-  const result = checkHealth({ name, health: healthValue });
-  expect(result).toBe(expended);
+test('testing', () => {
+  const received = sortPlayers([
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+  ]);
+  const expected = [
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ];
+
+  expect(received).toEqual(expected);
 });

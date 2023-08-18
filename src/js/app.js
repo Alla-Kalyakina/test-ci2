@@ -1,8 +1,3 @@
-export default function checkHealth(data) {
-  if (data.health > 50) {
-    return 'healthy';
-  } if (data.health <= 50 && data.health > 15) {
-    return 'wounded';
-  }
-  return 'critical';
+export default function sortPlayers(players) {
+  return players.sort((a, b) => b.health - a.health);
 }
